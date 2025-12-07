@@ -1,0 +1,16 @@
+version: "2"
+
+linters:
+  disable:
+    - funlen
+    - godox
+    - gosec
+    - mnd
+    - varnamelen
+    - wsl
+
+issues:
+  exclude-rules:
+    - path: pattester/wasi/wa0/ptest.go
+      text: "QF1008"
+
